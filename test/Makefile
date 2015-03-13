@@ -111,11 +111,6 @@ SRC=	$(BNTEST).c $(ECTEST).c  $(ECDSATEST).c $(ECDHTEST).c $(IDEATEST).c \
 	$(GOST2814789TEST).c $(HEARTBEATTEST).c $(P5_CRPT2_TEST).c \
 	$(CONSTTIMETEST).c testutil.c
 
-EXHEADER= 
-HEADER=	testutil.h $(EXHEADER)
-
-ALL=    $(GENERAL) $(SRC) $(HEADER)
-
 top:
 	(cd ..; $(MAKE) DIRS=$(DIR) TESTS=$(TESTS) all)
 
@@ -126,17 +121,11 @@ exe:	$(EXE) dummytest$(EXE_EXT)
 files:
 	$(PERL) $(TOP)/util/files.pl Makefile >> $(TOP)/MINFO
 
-links:
-
 generate: $(SRC)
 $(SRC):
 	@sh $(TOP)/util/point.sh dummytest.c $@
 
 errors:
-
-install:
-
-uninstall:
 
 tags:
 	ctags $(SRC)

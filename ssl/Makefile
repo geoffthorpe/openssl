@@ -43,11 +43,6 @@ LIBOBJ= \
 
 SRC= $(LIBSRC)
 
-EXHEADER= ssl.h ssl2.h ssl3.h ssl23.h tls1.h dtls1.h kssl.h srtp.h
-HEADER=	$(EXHEADER) ssl_locl.h kssl_lcl.h
-
-ALL=    $(GENERAL) $(SRC) $(HEADER)
-
 top:
 	(cd ..; $(MAKE) DIRS=$(DIR) all)
 
@@ -65,21 +60,6 @@ shared: lib
 
 files:
 	$(PERL) $(TOP)/util/files.pl Makefile >> $(TOP)/MINFO
-
-links:
-	@$(PERL) $(TOP)/util/mklink.pl ../include/openssl $(EXHEADER)
-	@$(PERL) $(TOP)/util/mklink.pl ../test $(TEST)
-	@$(PERL) $(TOP)/util/mklink.pl ../apps $(APPS)
-
-install:
-	@[ -n "$(INSTALLTOP)" ] # should be set by top Makefile...
-	@headerlist="$(EXHEADER)"; for i in $$headerlist ; \
-	do  \
-	(cp $$i $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i; \
-	chmod 644 $(INSTALL_PREFIX)$(INSTALLTOP)/include/openssl/$$i ); \
-	done;
-
-uninstall:
 
 tags:
 	ctags $(SRC)
