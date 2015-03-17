@@ -123,7 +123,7 @@ x509_att.o: ../../include/openssl/pkcs7.h ../../include/openssl/safestack.h
 x509_att.o: ../../include/openssl/sha.h ../../include/openssl/stack.h
 x509_att.o: ../../include/openssl/symhacks.h ../../include/openssl/x509.h
 x509_att.o: ../../include/openssl/x509_vfy.h ../../include/openssl/x509v3.h
-x509_att.o: ../cryptlib.h x509_att.c
+x509_att.o: ../cryptlib.h x509_att.c x509_lcl.h
 x509_cmp.o: ../../e_os.h ../../include/openssl/asn1.h
 x509_cmp.o: ../../include/openssl/bio.h ../../include/openssl/buffer.h
 x509_cmp.o: ../../include/openssl/conf.h ../../include/openssl/crypto.h
@@ -407,3 +407,17 @@ x_all.o: ../../include/openssl/sha.h ../../include/openssl/stack.h
 x_all.o: ../../include/openssl/symhacks.h ../../include/openssl/x509.h
 x_all.o: ../../include/openssl/x509_vfy.h ../../include/openssl/x509v3.h
 x_all.o: ../cryptlib.h x_all.c
+x_attrib.o: ../../e_os.h ../../include/openssl/asn1.h
+x_attrib.o: ../../include/openssl/asn1t.h ../../include/openssl/bio.h
+x_attrib.o: ../../include/openssl/buffer.h ../../include/openssl/crypto.h
+x_attrib.o: ../../include/openssl/e_os2.h ../../include/openssl/ec.h
+x_attrib.o: ../../include/openssl/ecdh.h ../../include/openssl/ecdsa.h
+x_attrib.o: ../../include/openssl/err.h ../../include/openssl/evp.h
+x_attrib.o: ../../include/openssl/lhash.h ../../include/openssl/obj_mac.h
+x_attrib.o: ../../include/openssl/objects.h ../../include/openssl/opensslconf.h
+x_attrib.o: ../../include/openssl/opensslv.h ../../include/openssl/ossl_typ.h
+x_attrib.o: ../../include/openssl/pkcs7.h ../../include/openssl/safestack.h
+x_attrib.o: ../../include/openssl/sha.h ../../include/openssl/stack.h
+x_attrib.o: ../../include/openssl/symhacks.h ../../include/openssl/x509.h
+x_attrib.o: ../../include/openssl/x509_vfy.h ../cryptlib.h x509_lcl.h
+x_attrib.o: x_attrib.c

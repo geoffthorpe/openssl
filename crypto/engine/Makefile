@@ -125,7 +125,7 @@ eng_cryptodev.o: ../../include/openssl/ossl_typ.h ../../include/openssl/pkcs7.h
 eng_cryptodev.o: ../../include/openssl/safestack.h ../../include/openssl/sha.h
 eng_cryptodev.o: ../../include/openssl/stack.h ../../include/openssl/symhacks.h
 eng_cryptodev.o: ../../include/openssl/x509.h ../../include/openssl/x509_vfy.h
-eng_cryptodev.o: eng_cryptodev.c
+eng_cryptodev.o: ../bn/bn_lcl.h ../include/internal/bn_int.h eng_cryptodev.c
 eng_ctrl.o: ../../e_os.h ../../include/openssl/asn1.h
 eng_ctrl.o: ../../include/openssl/bio.h ../../include/openssl/buffer.h
 eng_ctrl.o: ../../include/openssl/crypto.h ../../include/openssl/e_os2.h

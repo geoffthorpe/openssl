@@ -123,21 +123,19 @@ pem_info.o: ../cryptlib.h pem_info.c
 pem_lib.o: ../../e_os.h ../../include/openssl/asn1.h
 pem_lib.o: ../../include/openssl/bio.h ../../include/openssl/buffer.h
 pem_lib.o: ../../include/openssl/crypto.h ../../include/openssl/des.h
-pem_lib.o: ../../include/openssl/e_os2.h
-pem_lib.o: ../../include/openssl/ec.h ../../include/openssl/ecdh.h
-pem_lib.o: ../../include/openssl/ecdsa.h ../../include/openssl/engine.h
-pem_lib.o: ../../include/openssl/err.h ../../include/openssl/evp.h
-pem_lib.o: ../../include/openssl/lhash.h ../../include/openssl/obj_mac.h
-pem_lib.o: ../../include/openssl/objects.h ../../include/openssl/opensslconf.h
-pem_lib.o: ../../include/openssl/opensslv.h ../../include/openssl/ossl_typ.h
-pem_lib.o: ../../include/openssl/pem.h ../../include/openssl/pem2.h
-pem_lib.o: ../../include/openssl/pkcs12.h ../../include/openssl/pkcs7.h
-pem_lib.o: ../../include/openssl/rand.h ../../include/openssl/safestack.h
-pem_lib.o: ../../include/openssl/sha.h ../../include/openssl/stack.h
-pem_lib.o: ../../include/openssl/symhacks.h ../../include/openssl/ui.h
-pem_lib.o: ../../include/openssl/x509.h
-pem_lib.o: ../../include/openssl/x509_vfy.h ../asn1/asn1_locl.h ../cryptlib.h
-pem_lib.o: pem_lib.c
+pem_lib.o: ../../include/openssl/e_os2.h ../../include/openssl/ec.h
+pem_lib.o: ../../include/openssl/ecdh.h ../../include/openssl/ecdsa.h
+pem_lib.o: ../../include/openssl/engine.h ../../include/openssl/err.h
+pem_lib.o: ../../include/openssl/evp.h ../../include/openssl/lhash.h
+pem_lib.o: ../../include/openssl/obj_mac.h ../../include/openssl/objects.h
+pem_lib.o: ../../include/openssl/opensslconf.h ../../include/openssl/opensslv.h
+pem_lib.o: ../../include/openssl/ossl_typ.h ../../include/openssl/pem.h
+pem_lib.o: ../../include/openssl/pem2.h ../../include/openssl/pkcs12.h
+pem_lib.o: ../../include/openssl/pkcs7.h ../../include/openssl/rand.h
+pem_lib.o: ../../include/openssl/safestack.h ../../include/openssl/sha.h
+pem_lib.o: ../../include/openssl/stack.h ../../include/openssl/symhacks.h
+pem_lib.o: ../../include/openssl/x509.h ../../include/openssl/x509_vfy.h
+pem_lib.o: ../asn1/asn1_locl.h ../cryptlib.h pem_lib.c
 pem_oth.o: ../../e_os.h ../../include/openssl/asn1.h
 pem_oth.o: ../../include/openssl/bio.h ../../include/openssl/buffer.h
 pem_oth.o: ../../include/openssl/crypto.h ../../include/openssl/e_os2.h
